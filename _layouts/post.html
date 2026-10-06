@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="eyebrow">{{ page.category | default: page.categories[0] | default: "Research notes" }}</div>
+  <h1>{{ page.title }}</h1>
+  <div class="meta"><span>{{ page.date | date: "%-d %b %Y" }}</span><span>{{ page.author }}</span>{% assign words = content | number_of_words %}<span>{{ words | divided_by: 220 | plus: 1 }} min read</span></div>
+  {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  <div class="post-body">{{ content }}</div>
+  {% if page.compound %}
+  <div class="card related"><div><b>{{ page.compound_name | default: page.compound }} in the catalog</b><span>Sizes, pricing and the current lot certificate.</span></div><a class="btn btn-primary" href="{{ '/' | relative_url }}?c={{ page.compound }}">View compound</a></div>
+  {% else %}
+  <div class="card related"><div><b>Reality Supps catalog</b><span>Thirteen compounds, one independent certificate per lot.</span></div><a class="btn btn-primary" href="{{ '/#products' | relative_url }}">Browse products</a></div>
+  {% endif %}
+  <div class="ruo">Research use only · Not for human or animal consumption · Not medical advice · This note summarizes published in-vitro and animal research and makes no claims about effects in humans.</div>
+</article>
