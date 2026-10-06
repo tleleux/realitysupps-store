@@ -1,0 +1,27 @@
+title: Reality Supps Research Notes
+description: Factual notes on research peptides for qualified researchers. Certificates, storage, compound primers, supplier due diligence. Research use only.
+url: "https://tleleux.github.io"
+baseurl: "/realitysupps-store"
+lang: en
+author:
+  name: Reality Supps Research Desk
+twitter:
+  card: summary_large_image
+logo: /badge.png
+permalink: /blog/:title/
+timezone: America/New_York
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+feed:
+  path: blog/feed.xml
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Reality Supps Research Desk
+exclude:
+  - README.md

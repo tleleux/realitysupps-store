@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tleleux.github.io/realitysupps-store/sitemap.xml

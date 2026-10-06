@@ -1,0 +1,21 @@
+---
+layout: default
+title: Research Notes
+description: Factual notes on research peptides for qualified researchers. Certificates, storage, compound primers and supplier due diligence. Published by the Reality Supps research desk.
+permalink: /blog/
+---
+<div class="blog-head">
+  <div class="eyebrow">Research notes</div>
+  <h1>Read before you order.</h1>
+  <p>Short, sourced notes on certificates, storage, compound chemistry and supplier due diligence. No protocols, no claims. New notes most days.</p>
+</div>
+<div class="list">
+{% for post in site.posts %}
+  <a class="item" href="{{ post.url | relative_url }}">
+    <div class="eyebrow">{{ post.category | default: post.categories[0] | default: "Research notes" }}</div>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
+    <div class="mono">{{ post.date | date: "%-d %b %Y" }}</div>
+  </a>
+{% endfor %}
+</div>
