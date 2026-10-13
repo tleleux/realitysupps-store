@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tleleux.github.io/realitysupps-store/sitemap.xml
+Sitemap: https://shop.realitymastery.com/sitemap.xml
